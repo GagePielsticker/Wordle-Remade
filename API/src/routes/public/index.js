@@ -25,7 +25,7 @@ module.exports = client => {
 
   /* Checks word and returns 0, 1, or 2 for each letter */
   router.post('/check', (req, res) => {
-    client.checkWord(req.body.attempt)
+    client.checkWord(req.body.attempt.toLowerCase())
       .then(e => res.status(200).json({ attempt: e }))
       .catch(() => res.status(500))
   })
