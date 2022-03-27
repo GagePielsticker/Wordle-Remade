@@ -49,7 +49,7 @@ Codes are as follows
 2 - Letter is in word, and is in that position
 ```
 
-| Body Form Key | Type     | Description                |
+| Body Form Data | Type     | Description                |
 | :-------- | :------- | :------------------------- |
 | `attempt` | `string` | **Required**. A string to check against the daily word. |
 
