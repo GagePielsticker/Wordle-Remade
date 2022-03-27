@@ -1,7 +1,7 @@
  [![License](https://img.shields.io/badge/license-MIT-green)](https://github.com/JamesPielstickerPortfolio/Wordle-Remade/blob/master/LICENSE.md)
 # Wordle Remade
 
-A recreatione of wordle using NodeJS, MongoDB, Express, and many more modern technologies.
+A re-creation of wordle using NodeJS, MongoDB, Docker, and many more modern technologies.
 
 ## Preface
 > I created this as a platform to refresh my fullstack skills in regards to web development. I figured a wordle recreation would be a good oppurtunity to do so.
