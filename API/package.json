@@ -1,0 +1,35 @@
+{
+  "name": "wordle-api",
+  "version": "1.0.0",
+  "description": "An API for our wordle recreation",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JamesPielstickerPortfolio/Express-JWT-Boilerplate.git"
+  },
+  "keywords": [
+    "wordle",
+    "recreated",
+    "api"
+  ],
+  "author": "James Pielsticker",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JamesPielstickerPortfolio/Express-JWT-Boilerplate/issues"
+  },
+  "homepage": "https://github.com/JamesPielstickerPortfolio/Express-JWT-Boilerplate#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cron": "^1.8.2",
+    "express": "^4.17.1",
+    "helmet": "^4.6.0",
+    "mongodb": "^4.2.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "standard": "^16.0.4"
+  }
+}

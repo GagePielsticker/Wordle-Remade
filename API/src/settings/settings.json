@@ -1,0 +1,16 @@
+{
+    "api" : {
+        "port" : 3000
+      },
+    
+      "mongodb" : {
+        "host" : "127.0.0.1",
+        "port" : "27017",
+        "username" : "",
+        "password" : "",
+        "database" : "wordle-api",
+        "currentWordCollection": "current_word",
+        "reconnect_attempts": 10,
+        "reconnect_interval": 1000
+      }
+}
