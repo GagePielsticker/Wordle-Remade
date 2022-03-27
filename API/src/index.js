@@ -26,7 +26,7 @@ require('./library/cronjobs.js')(client)
 /* Routing */
 
 // Public endpoints
-app.use('/', require('./routes/public/index.js')(client))
+app.use('/', require('./routes/index.js')(client))
 
 /* catchall for authenticated but not found error handling */
 app.get('*', (req, res) => {
