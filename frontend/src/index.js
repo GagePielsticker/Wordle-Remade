@@ -38,5 +38,4 @@ app.get('*', (req, res) => {
 /* Listen on http */
 client.server.listen(client.settings.port, () => {
   console.log(`API instance :: ${client.appid} :: port :: ${client.settings.port}!`)
-
 })

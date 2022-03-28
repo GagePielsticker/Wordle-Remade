@@ -1,0 +1,23 @@
+html, body {
+    width: 100%;
+    height: 100%;
+
+    background-color: #F6F6F6;
+}
+
+#nav {
+    background-color: #25252c;
+}
+
+#main-wrapper {
+    height: 100%;
+    margin-top: 50px;
+}
+
+.word-container {
+    border-style: solid;
+    width: 70px !important;
+    height: 70px;
+    margin: 5px;
+    
+}
