@@ -80,6 +80,10 @@ Codes are as follows
 2 - Letter is in word, and is in that position
 ```
 
+## Backend Routines
+Daily there is a cronjob which generates a new random word and stores it to the database.
+
+
 ## Authors
 
 - [@Gage Pielsticker](https://github.com/GagePielsticker)
