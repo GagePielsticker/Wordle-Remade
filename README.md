@@ -14,6 +14,11 @@ A re-creation of wordle using NodeJS, MongoDB, Docker, and many more modern tech
 - MongoDB
 - EJS
 
+- Bootstrap
+- Animate.css
+- Canvas-Confetti
+- simple-keyboard
+
 ## Interaction Flow
 
 ## Frontend Endpoint Reference
