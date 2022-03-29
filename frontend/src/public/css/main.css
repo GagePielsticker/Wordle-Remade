@@ -1,16 +1,59 @@
+:root {
+    --light: #F6F6F6;
+    --grey: #c4c4c4;
+    --dark: #25252c;
+    --caution: #C9B458;
+    --good: #6AAA64;
+    --animate-delay: 0.5s;
+}
+
+.wrong {
+    background-color: var(--grey) !important;
+}
+
+.possibly {
+    background-color: var(--caution) !important;
+}
+
+.correct {
+    background-color: var(--good) !important;
+}
+
 html, body {
     width: 100%;
     height: 100%;
-
-    background-color: #F6F6F6;
+    background-color: var(--light);
 }
 
 #nav {
-    background-color: #25252c;
+    background-color: var(--light);
+    border-bottom: var(--dark);
+    border-bottom-style: solid;
+}
+
+#keyboard-wrapper {
+    width: 80%;
+    margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 800px) {
+    #keyboard-wrapper {
+        width: 100%;
+        margin-bottom: 0px;
+    }    
+}
+
+.hg-standardBtn {
+    height: 60px !important;
+}
+
+#titletext {
+    color: var(--dark) !important;
+    font-weight: bold;
+    font-size: 30px;
 }
 
 #main-wrapper {
-    height: 100%;
     margin-top: 50px;
 }
 
@@ -19,5 +62,27 @@ html, body {
     width: 70px !important;
     height: 70px;
     margin: 5px;
-    
+    font-size:40px;
+}
+
+.no {
+    background-color: var(--grey);
+    border-color: var(--grey);
+    color:var(--light);
+}
+
+.maybe {
+    background-color: var(--caution);
+    border-color: var(--caution);
+    color:var(--light);
+}
+
+.yes {
+    background-color: var(--good);
+    color:var(--light);
+    border-color: var(--good);
+}
+
+#alert {
+    display: none;
 }

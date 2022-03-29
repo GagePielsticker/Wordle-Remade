@@ -59,10 +59,18 @@ module.exports = client => {
       const attemptWordArray = word.split('')
 
       // Loops through attempted word, replaces letter with integer status
+
       attemptWordArray.map((entry, index) => {
-        if (!curWordArray.includes(entry)) return attemptWordArray[index] = 0 // attempt letter is not in current word at all
-        if (curWordArray.includes(entry) && curWordArray[index] != entry) return attemptWordArray[index] = 1 // attempt letter is in word, but not in position
-        return attemptWordArray[index] = 2
+        if (!curWordArray.includes(entry)) {
+          attemptWordArray[index] = 0
+          return
+        } // attempt letter is not in current word at all
+
+        if (curWordArray.includes(entry) && curWordArray[index] != entry) { // attempt letter is in word, but not in position
+          return attemptWordArray[index] = 1
+        }
+
+        return attemptWordArray[index] = 2 // Letter is in word and in position
       })
 
       return resolve(attemptWordArray)

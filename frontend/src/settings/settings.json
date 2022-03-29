@@ -1,5 +1,5 @@
 {
     "port": 80,
-    "api_ip": "",
-    "api_port": ""
+    "api_ip": "localhost",
+    "api_port": "3000"
 }

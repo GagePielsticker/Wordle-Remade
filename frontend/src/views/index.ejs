@@ -8,60 +8,75 @@
     <meta itemprop="description" content="Wordle Re-created is a open source wordle-type game project written in NodeJS, MongoDB, Docker, and many more modern technologies.">
     
     <body>
-        <nav id="nav" class="navbar navbar-expand-lg navbar-dark">
+
+
+        <nav id="nav" class="navbar navbar-expand-lg navbar-dark animate__animated animate__slideInDown">
             <div class="container-fluid justify-content-center">
-              <a class="navbar-brand" href="#">Wordle Re-Created</a>
+              <a class="navbar-brand" id="titletext">Wordle Re-Created</a>
               
             </div>
           </nav>
           
 
 
-        <div id="main-wrapper" class="container justify-content-center">
+        <div id="main-wrapper" class="container justify-content-center animate__animated animate__fadeIn animate__delay-2s">
             <div class="row d-flex justify-content-center">
-                <div id="row1" class="word-container"></div>
-                <div id="row1" class="word-container"></div>
-                <div id="row1" class="word-container"></div>
-                <div id="row1" class="word-container"></div>
-                <div id="row1" class="word-container"></div>
+                <span id="row1" class="word-container text-center animate__animated"></span>
+                <span id="row2" class="word-container text-center animate__animated"></span>
+                <span id="row3" class="word-container text-center animate__animated"></span>
+                <span id="row4" class="word-container text-center animate__animated"></span>
+                <span id="row5" class="word-container text-center animate__animated"></span>
               </div>
               <div class="row d-flex justify-content-center">
-                <div id="letter1" class="word-container"></div>
-                <div id="letter1" class="word-container"></div>
-                <div id="letter1" class="word-container"></div>
-                <div id="letter1" class="word-container"></div>
-                <div id="letter1" class="word-container"></div>
+                <span id="row6" class="word-container text-center animate__animated"></span>
+                <span id="row7" class="word-container text-center animate__animated"></span>
+                <span id="row8" class="word-container text-center animate__animated"></span>
+                <span id="row9" class="word-container text-center animate__animated"></span>
+                <span id="row10" class="word-container text-center animate__animated"></span>
               </div>
               <div class="row d-flex justify-content-center">
-                <div id="letter1" class="word-container"></div>
-                <div id="letter1" class="word-container"></div>
-                <div id="letter1" class="word-container"></div>
-                <div id="letter1" class="word-container"></div>
-                <div id="letter1" class="word-container"></div>
+                <span id="row11" class="word-container text-center animate__animated"></span>
+                <span id="row12" class="word-container text-center animate__animated"></span>
+                <span id="row13" class="word-container text-center animate__animated"></span>
+                <span id="row14" class="word-container text-center animate__animated"></span>
+                <span id="row15" class="word-container text-center animate__animated"></span>
               </div>
               <div class="row d-flex justify-content-center">
-                <div id="letter1" class="word-container"></div>
-                <div id="letter1" class="word-container"></div>
-                <div id="letter1" class="word-container"></div>
-                <div id="letter1" class="word-container"></div>
-                <div id="letter1" class="word-container"></div>
+                <span id="row16" class="word-container text-center animate__animated"></span>
+                <span id="row17" class="word-container text-center animate__animated"></span>
+                <span id="row18" class="word-container text-center animate__animated"></span>
+                <span id="row19" class="word-container text-center animate__animated"></span>
+                <span id="row20" class="word-container text-center animate__animated"></span>
               </div>
               <div class="row d-flex justify-content-center">
-                <div id="letter1" class="word-container"></div>
-                <div id="letter1" class="word-container"></div>
-                <div id="letter1" class="word-container"></div>
-                <div id="letter1" class="word-container"></div>
-                <div id="letter1" class="word-container"></div>
+                <span id="row21" class="word-container text-center animate__animated"></span>
+                <span id="row22" class="word-container text-center animate__animated"></span>
+                <span id="row23" class="word-container text-center animate__animated"></span>
+                <span id="row24" class="word-container text-center animate__animated"></span>
+                <span id="row25" class="word-container text-center animate__animated"></span>
               </div>
               <div class="row d-flex justify-content-center">
-                <div id="letter1" class="word-container"></div>
-                <div id="letter1" class="word-container"></div>
-                <div id="letter1" class="word-container"></div>
-                <div id="letter1" class="word-container"></div>
-                <div id="letter1" class="word-container"></div>
+                <span id="row26" class="word-container text-center animate__animated"></span>
+                <span id="row27" class="word-container text-center animate__animated"></span>
+                <span id="row28" class="word-container text-center animate__animated"></span>
+                <span id="row29" class="word-container text-center animate__animated"></span>
+                <span id="row30" class="word-container text-center animate__animated"></span>
               </div>
-
-
         </div>
+        
+        <div id="keyboard-wrapper" class="position-absolute bottom-0 start-50 translate-middle-x">
+
+          <div id="alert" class="alert alert-danger animate__animated animate__fadeIn" role="alert">
+            
+          </div>
+    
+          <div class="simple-keyboard"></div>
+        </div>
+
+
+      <script src="./js/confetti.js"></script>
+      <script src="./js/keyboard.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+      <script src="./js/main.js"></script>
     </body>
 </html>

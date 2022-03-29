@@ -40,9 +40,9 @@ client.server.listen(client.apiSettings.api.port, () => {
   // Connection to mongodb
   console.log('Attempting to connect to database')
   client.connectDatabase()
-  .then(() => console.log('Connected database.'))
-  .catch(e => {
-    console.log(`Failed to connect to database :: ${e}`)
-    process.exit(1)
-  })
+    .then(() => console.log('Connected database.'))
+    .catch(e => {
+      console.log(`Failed to connect to database :: ${e}`)
+      process.exit(1)
+    })
 })
