@@ -4,14 +4,17 @@
 A re-creation of wordle using NodeJS, MongoDB, Docker, and many more modern technologies.
 
 ## Preface
-> I created this as a platform to refresh my fullstack skills in regards to web development. I figured a wordle recreation would be a good oppurtunity to do so.
+> I created this as a platform to refresh my fullstack skills in regards to web development. I figured a wordle recreation would be a good oppurtunity to do so. I designed this with a frontend service that delivers the to the client and an api service which stays hidden from public view.
 
 <img src="https://i.imgur.com/WCTo9I7.gif" width="600"/>
 
-## Infrastructure
+## Infrastructure Used
+- NodeJS
 - Express
 - MongoDB
 - EJS
+
+## Interaction Flow
 
 ## Frontend Endpoint Reference
 
