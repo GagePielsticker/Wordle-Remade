@@ -144,6 +144,14 @@ const myKeyboard = new Keyboard({
 
 function onKeyPress(button) {
   if(button == '{enter}') return submitWord()
+  if(button == '{bksp}') {
+    if (entered == 0 || entered == ((5 * currentLine) - 5)) return
+    attemptWord = attemptWord.slice(0, -1) // remove last letter
+    document.getElementById(`row${entered}`).classList.remove('animate__pulse')
+    document.getElementById(`row${entered}`).innerHTML = ''
+    entered--
+    return
+  }
   if (!(/^[A-Za-z]+$/).test(button)) return
   addLetter(button)
 }
