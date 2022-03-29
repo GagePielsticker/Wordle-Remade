@@ -4,7 +4,7 @@
 A re-creation of wordle using NodeJS, MongoDB, Docker, and many more modern technologies.
 
 ## Preface
-> I created this as a platform to refresh my fullstack skills in regards to web development. I figured a wordle recreation would be a good oppurtunity to do so. I designed this with a frontend service that delivers the to the client and an api service which stays hidden from public view. In each respective folder there is a settings.json file which points the frontend to the api and the api to mongodb etc.
+> I created this as a platform to refresh my fullstack skills in regards to web development. I figured a wordle recreation would be a good oppurtunity to do so. I designed this with a frontend service that delivers the to the client and an api service which stays hidden from public view. In each respective folder there is a settings.json file which points the frontend to the api and the api to mongodb etc. To run each respectively run the "NPM START" script in each package.
 
 <img src="https://i.imgur.com/WCTo9I7.gif" width="600"/>
 
