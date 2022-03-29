@@ -6,12 +6,35 @@ A re-creation of wordle using NodeJS, MongoDB, Docker, and many more modern tech
 ## Preface
 > I created this as a platform to refresh my fullstack skills in regards to web development. I figured a wordle recreation would be a good oppurtunity to do so.
 
-
+<img src="https://i.imgur.com/WCTo9I7.gif" width="600"/>
 
 ## Infrastructure
 - Express
 - MongoDB
-## Backend API Reference
+- EJS
+
+## Frontend Endpoint Reference
+
+#### Index
+
+```http
+  GET /
+```
+
+#### Check Word
+
+```http
+  POST /check
+```
+
+| Body Form Data | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `attempt` | `string` | **Required**. A string to check against the daily word. |
+
+Contacts the api's check endpoint with the word supplied by the user then responds to our client. This is to keep communication to our api unavailable to the public.
+
+
+## Backend Endpoint Reference
 
 #### Index
 
@@ -38,6 +61,11 @@ Returns JSON of generated word
 ```http
   POST /check
 ```
+
+| Body Form Data | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `attempt` | `string` | **Required**. A string to check against the daily word. |
+
 Returns JSON of word letter statuses.
 
 E.G. Submitting `test` results in `{ [ 1, 2, 0, 2] }` if daily word is `rent`
@@ -48,10 +76,6 @@ Codes are as follows
 1 - Letter is in word, not in that position
 2 - Letter is in word, and is in that position
 ```
-
-| Body Form Data | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-| `attempt` | `string` | **Required**. A string to check against the daily word. |
 
 ## Authors
 
